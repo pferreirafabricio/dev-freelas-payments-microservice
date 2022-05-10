@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using DevFreela.Payments.API.Models;
+using DevFreela.Payments.API.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace DevFreela.Payments.API.Controllers
 {
@@ -11,10 +9,22 @@ namespace DevFreela.Payments.API.Controllers
     [Route("api/payments")]
     public class PaymentsController : ControllerBase
     {
-        // [HttpPost]
-        // public async Task<IActionResult> Pay([FromBody] PaymentInfoInputModel paymentInfo)
-        // {
-            
-        // }
+        public readonly IPaymentService _paymentService;
+        
+        public PaymentsController(IPaymentService paymentService)
+        {
+            _paymentService = paymentService;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Pay([FromBody] PaymentInfoInputModel paymentInfo)
+        {
+            var result = await _paymentService.Process(paymentInfo);
+
+            if (!result)
+                return BadRequest();
+
+            return NoContent();
+        }
     }
 }
