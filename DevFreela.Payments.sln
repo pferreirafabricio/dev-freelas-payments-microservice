@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Payments.API", "DevFreela.Payments.API\DevFreela.Payments.API.csproj", "{7EF28BE7-D7CA-47DD-9BA4-9B5AF010DE83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Payments.API.RabbitMQ", "DevFreela.Payments.API.RabbitMQ\DevFreela.Payments.API.RabbitMQ.csproj", "{A0DC5380-D19D-45D4-A835-956613879F9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EF28BE7-D7CA-47DD-9BA4-9B5AF010DE83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF28BE7-D7CA-47DD-9BA4-9B5AF010DE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF28BE7-D7CA-47DD-9BA4-9B5AF010DE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF28BE7-D7CA-47DD-9BA4-9B5AF010DE83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DC5380-D19D-45D4-A835-956613879F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DC5380-D19D-45D4-A835-956613879F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DC5380-D19D-45D4-A835-956613879F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DC5380-D19D-45D4-A835-956613879F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

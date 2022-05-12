@@ -36,6 +36,42 @@
                 "${workspaceFolder}/DevFreela.Payments.API/DevFreela.Payments.API.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-rabbit",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/DevFreela.Payments.API.RabbitMQ/DevFreela.Payments.API.RabbitMQ.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish-rabbit",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/DevFreela.Payments.API.RabbitMQ/DevFreela.Payments.API.RabbitMQ.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch-rabbit",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/DevFreela.Payments.API.RabbitMQ/DevFreela.Payments.API.RabbitMQ.csproj"
+            ],
+            "problemMatcher": "$msCompile"
         }
     ]
 }

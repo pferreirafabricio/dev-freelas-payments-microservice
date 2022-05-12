@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DevFreela.Payments.API.RabbitMQ.Consumers;
 using DevFreela.Payments.API.RabbitMQ.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,6 +29,7 @@ namespace DevFreela.Payments.API.RabbitMQ
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IPaymentService, PaymentService>();
+            services.AddHostedService<ProcessPaymentConsumer>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
