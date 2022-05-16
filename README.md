@@ -1,4 +1,4 @@
-# ❓ Dev Freelas - Payments Microservice
+# 🪔 Dev Freelas - Payments Microservice
 
 <p align="left">
   Microservice for payments to be used in DevFreelas project (for practice only)
