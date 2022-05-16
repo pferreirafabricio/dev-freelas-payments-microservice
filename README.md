@@ -9,6 +9,8 @@
   </a>
 </p>
 
+> Main project: https://github.com/pferreirafabricio/dev-freelas
+
 ## 🏄‍♂️ Quick Start
  1. Clone this repository `git clone https://github.com/pferreirafabricio/dev-freelas-payments-microservice.git`;
  2. Enter in the project's folder: `cd dev-freelas-payments-microservice`
