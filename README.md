@@ -18,6 +18,6 @@
 
 ## :bricks: This project was built with: 
 - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
-- [.NET Core 6](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
+- [.NET Core 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 - [Swagger](https://swagger.io/)
 - [RabbitMQ](https://www.rabbitmq.com/)
