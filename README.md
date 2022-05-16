@@ -17,6 +17,7 @@
  3. Install dependencies: `dotnet restore`
  4. Enter the in desired project's folder: `cd ./DevFreela.Payments.API` or `cd ./DevFreela.Payments.API.RabbitMQ`
  5. Run it and be happy: `dotnet watch run` 😃
+> If you want to run the RabbitMQ version, remember to install it. Click [here for Windows](https://www.rabbitmq.com/install-windows.html) or [here for Linux](https://www.netbraintech.com/docs/ie80/help/installing-rabbitmq-on-linux.htm).
 
 ## :bricks: This project was built with: 
 - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
